@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'SVN-Product Sans Bold';
+    src: url('../fonts/SVN-ProductSansBold.eot');
+    src: url('../fonts/SVN-ProductSansBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SVN-ProductSansBold.woff2') format('woff2'),
+        url('../fonts/SVN-ProductSansBold.woff') format('woff'),
+        url('../fonts/SVN-ProductSansBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Product Sans';
+    src: url('../fonts/SVN-ProductSans.eot');
+    src: url('../fonts/SVN-ProductSans.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SVN-ProductSans.woff2') format('woff2'),
+        url('../fonts/SVN-ProductSans.woff') format('woff'),
+        url('../fonts/SVN-ProductSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+$light_green : #66D19E;
+$gray_black : #333333;
+$gray : #757575;
+$white: #fff;
+$error: #FA1900;
+$light_red: #FF6F5C;
+$text_blue: #276EF1;
+$blue: #276EF1;
+$light_blue: #6FA2FF;
+$orange:#FF7A1A; 
+.text-green{
+    color:$blue;
+}
+@mixin typo($type,$size,$color) {
+    @if $type == 'bold'{
+        font-family: 'SVN-Product Sans Bold',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: $size;
+        color: #{$color};
+    }
+    @if $type == 'normal'{
+        font-family: 'SVN-Product Sans',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: $size;
+        color: #{$color};
+    }
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-12{
+    @include typo('normal',12px,#333);
+}
+.text-normal{
+    font-family: 'SVN-Product Sans',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.text-bold{
+    font-family: 'SVN-Product Sans Bold',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.text-orange{
+    color:#FF9548;
+}
+.text-black{
+    color:$gray_black;
+}
+
+::-webkit-input-placeholder { /* Edge */
+    font-size: 14px;
+    color:$gray;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 14px;
+    color:$gray;
+  }
+  
+  ::placeholder {
+    color:$gray;
+    font-size: 14px;
+  }
+
+  .text-black{
+      color:$gray_black;
+  }
+.text-required{
+    color:$error;
+}
+h5{
+    color:#000;
+    margin-bottom: 24px;
+    font-size: 14px;
+    font-family: 'SVN-Product Sans Bold',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

@@ -1,0 +1,99 @@
+a{
+    text-decoration: none;
+}
+
+ul.style-1 li.active > a{
+    background: #449d47; 
+    text-decoration: none;
+}
+
+
+ul.pagination li a:hover {
+    color: #2b772e;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border-color: #449d47;
+}
+
+a:hover span, button:hover span, a:active span, button:active span, a:focus span, button:focus span {
+    color: #449d47;;
+}
+
+.daterangepicker td.active, .daterangepicker td.active:hover {
+    background-color: #449d47;
+}
+
+.pagination-apay-partner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+.pagination-apay-partner .page-a-link {
+    display: inline-block;
+    min-width: 38px;
+    height: 38px;
+    text-align: center;
+    background: #efefef;
+    line-height: 37px;
+    border-radius: 3px;
+    margin: 0px 5px;
+    transition: 0.2s;
+    border: solid 1px transparent;
+    outline: none;
+    text-decoration: none;
+}
+
+.pagination-apay-partner .page-a-link:hover{
+    color: black;
+    background-color: transparent;
+    border: solid 1px #449d47;
+}
+.pagination-apay-partner .icon-arrow {
+    display: inline-block;
+    width: 8px;
+    position: relative;
+    top: -1px;
+    transition: 0.3s;
+}
+
+.pagination-apay-partner .icon-arrow img{
+    width: 100%;
+}
+
+.pagination-apay-partner .icon-arrow:first-child{
+    margin-right: 5px;
+}
+
+.pagination-apay-partner .icon-arrow:last-child{
+    margin-left: 5px;
+}
+
+.pagination-apay-partner  .btn-step-page:first-child{
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.pagination-apay-partner  .btn-step-page:first-child:hover .icon-arrow{
+    transform: translateX(-3px);
+    text-decoration: none;
+}
+
+.pagination-apay-partner  .btn-step-page:last-child{
+    margin-left: 15px;
+}
+
+.pagination-apay-partner  .btn-step-page:last-child:hover .icon-arrow{
+    transform: translateX(3px);
+}
+
+
+.pagination-apay-partner .page-a-link.active{
+    background: #449d47;
+    color: white;
+    font-weight: 600;
+    border-color:#449d47;
+}

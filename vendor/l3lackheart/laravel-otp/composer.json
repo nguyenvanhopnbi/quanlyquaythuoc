@@ -1,0 +1,59 @@
+{
+    "name": "l3lackheart/laravel-otp",
+    "description": "Secure your laravel routes with otps. (one time passwords)",
+    "homepage": "https://github.com/l3lackheart/laravel-otp",
+    "keywords": ["laravel", "otp", "one time passwords", "one time pin", "middleware"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hilmi Erdem KEREN",
+            "email": "erdemkeren@gmail.com"
+        },
+        {
+            "name": "Berkay Güre",
+            "email": "bgure@hotmail.com.tr"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5|^8.0",
+        "illuminate/database": "^7.0|^8.0",
+        "illuminate/http": "^7.0|^8.0",
+        "illuminate/notifications": "^7.0|^8.0",
+        "illuminate/routing": "^7.0|^8.0",
+        "illuminate/support": "^7.0|^8.0",
+        "nesbot/carbon": "^2.35"
+    },
+    "require-dev": {
+        "illuminate/config": "^7.0|^8.0",
+        "mockery/mockery": "~1.4.3",
+        "phpunit/phpunit": "8.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Erdemkeren\\Otp\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Erdemkeren\\Otp\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Erdemkeren\\Otp\\OtpServiceProvider"
+            ],
+            "aliases": {
+                "Otp": "Erdemkeren\\Otp\\OtpFacade"
+            }
+        }
+    }
+}

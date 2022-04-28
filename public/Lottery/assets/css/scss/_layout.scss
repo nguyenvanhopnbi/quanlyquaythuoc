@@ -1,0 +1,550 @@
+@import '_icon.scss';
+@import '_sidebar.scss';
+@import '_forms.scss';
+
+a{
+    text-decoration: none;
+    color:$text_blue;
+}
+body{
+    background-color: #eee;
+    @include typo('normal',14px,$gray_black);
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+   
+    line-height: 1.5;
+}
+
+.page-content{
+    height: calc(100vh - 73px);
+    // height: -webkit-fill-available;
+    max-height: 100vh;
+    overflow:hidden;
+
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flex-column {
+    flex-direction: column!important;
+}
+
+main{
+    flex: 1 auto;
+    padding: 20px;
+    overflow-y: auto;
+    .page-title{
+        @include typo('bold',24px,$gray_black);
+        margin-bottom: 24px;
+    }
+
+}
+
+.page-stats{
+
+    .stats-block{
+        background: #fff;
+        border:1px solid #79DB7C;
+        padding: 20px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.05);
+        .stats-icon{
+            width: 60px;
+            height: 60px;
+            max-width: 60px;
+            flex: 100%;
+            border-radius: 30px;
+            background: linear-gradient(90deg, #41AB2C 0%, #56C046 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 1em;
+            &.bg-flat{
+                background: #F0F9F4;
+                .icon-money{
+                    background: url(../images/ic-money-g.svg) no-repeat center center / 29px;
+                }
+            }
+            >div{
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+            .icon-money{
+                background: url(../images/ic-money-w.svg) no-repeat center center / 29px;
+            }
+
+            .icon-bag{
+                background: url(../images/ic-total-money.svg) no-repeat center center / 29px;
+            }
+
+            .icon-rev{
+                background: url(../images/ic-rev.svg) no-repeat center center / 32px;
+            }
+        }
+        .stats-block-number{
+            @include typo('bold',24px,$blue);
+        }
+    }
+}
+
+.block{
+    margin-bottom: 24px;
+}
+
+.page-subtitle{
+    @include typo('bold',16px,$gray_black);
+    margin-bottom: 1rem;
+    span{
+        color:#AFAFAF;
+        padding-left: 12px;
+    }
+}
+
+.page-title{
+    .page-subtitle{
+        @include typo('normal',16px,$gray);
+    }
+}
+
+.block{
+    background: #fff;
+    padding: 20px;
+    filter: drop-shadow(0px 8px 36px rgba(0, 0, 0, 0.17));
+    border-radius: 12px;
+    .block-main{
+        margin-top: 20px;
+    }
+}
+
+.modal{
+    .modal-content{
+        background: #FFFFFF;
+        /* All / Gray 200 */
+
+        border: 1px solid #E2E2E2;
+        box-sizing: border-box;
+        /* Below / High */
+
+        box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.22);
+        border-radius: 12px;
+
+        .modal-header{
+            border-bottom: 0;
+            padding: 24px;
+            padding-bottom: 0;
+            .modal-title{
+                @include typo('bold',18px,$gray_black);
+            }
+        }
+        .modal-body{
+            padding: 1rem 24px 24px;
+        }
+    }
+}
+
+.ds-full{
+    flex: 1 100%;
+}
+
+.ds-list{
+    .ds-item{
+        display: flex;
+        padding: 5px 0;
+    &.ds-hightlight{
+        box-shadow: inset 4px 0 0 $blue;
+        padding-left: 1rem;
+    }
+        .ds-title{
+            flex: 1 auto;
+            display: flex;
+            align-items: center;
+            color:$gray;
+            a{
+                padding-left: 5px;
+            }
+        }
+        .ds-text{
+            .text-big{
+                @include typo('bold',18px,#FF9548);
+            }
+        }
+    }
+}
+
+.ticket_type{
+    .col-1{
+        flex: 1 auto;
+        padding: 0.75rem 1rem;
+    }
+    .col-2{
+        padding: 0.65rem 1rem;
+        text-align: right;
+    }
+    .ticket_header{
+        text-transform: uppercase;
+    }
+    .ticket_list_ct{
+        .t-list{
+            &:nth-child(odd){
+                background: #eee;
+            }
+            .col-1{
+                color:$gray;
+            }
+        }
+    }
+    .ticket-more{
+        padding: .65rem 1rem;
+    }
+}
+.ds-seperator{
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-top:1px dashed #CBCBCB;
+    margin:10px 0;
+}
+
+.ds-action{
+    margin-top: 10px;
+}
+
+
+    .block-title{
+        h4{
+            display: inline-flex;
+            align-items: center;
+            @include typo('bold',18px,$gray_black);
+            i{
+                margin-right: 10px;
+            }
+        }
+    }
+
+
+.bg-green-gradient{
+    background: url(../images/img-chart.svg) no-repeat 80% center, linear-gradient(90deg, #41AB2C 0%, #56C046 100%)!important;
+    border:none!important;
+    /* Below / Low */
+    box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.05);
+    .stats-icon{
+        display: none!important;
+    }
+    .stats-block-ct{
+        .stats-block-title,.stats-block-number{
+            color:#fff!important;
+        }
+    }
+    
+}
+
+.account-form{
+    .row > div{
+        margin-bottom: 1rem;
+    }
+
+}
+.embed-pic{
+   margin-top: 1rem;
+    input{
+        display: block;
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }       
+    label{
+        display: flex;
+        width:100%;
+        position: relative;
+        background: #e2e2e2;
+        border-radius: 12px;
+        position: relative;
+        justify-content: center;
+        height: 6.75rem;
+        align-items: center;
+        cursor: pointer;
+        &:before{
+            content:"";
+            display: block;
+            width: 35px;height: 35px;
+            background: url(../images/ic-add.svg) no-repeat center center / 35px;
+        }
+    }
+}
+
+.account_stats{
+    text-align: right;
+    .text-code{
+        align-items: center;
+        display: flex;
+        justify-content: end;
+        .btn-copy{
+            margin-left: 8px;
+            display: inline-flex;
+            background: url(../images/ic-copy.svg) no-repeat center center / 32px;
+        }
+    }
+    .text-amount{
+        @include typo('bold',40px,$orange);
+       
+    }
+    .text-gray{
+        @include typo('normal',24px,#AFAFAF);
+        line-height:24px;
+        margin-bottom: 1rem;
+    }
+}
+
+.d-flex-auto{
+    flex: 1 auto;
+}
+
+.partner-step{
+    background: url(../images/img-line.png) no-repeat top right / auto 100%,linear-gradient(90deg, #05C37E 49.24%, #BCFFBC 95.55%);
+    padding-left: 60px;
+    margin: -20px -20px 24px;
+    padding: 20px 20px 20px 60px;
+    .partner-step-content{
+        color:#fff;
+        display: flex;
+        flex-wrap: wrap;
+        .page-subtitle{
+            width: 100%;
+            font-size: 18px;
+            padding-left: 3rem;
+        }
+        .partner-st{
+            max-width: 30%;
+            flex:100%;
+            margin-left: 3rem;
+            .partner-step-num{
+                background: #fff;
+                width:28px;height:28px;
+                color:$blue;
+                text-align: center;
+                line-height: 28px;
+                border-radius: 14px;
+            }
+            .partner-step-title{
+                font-family: 'SVN-Product Sans Bold',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                padding: .5rem 0;
+            }
+        }
+    }
+}
+.payment-filter{
+    .row > div{
+        margin-bottom: 1rem;
+    }
+}
+.payment-link{
+    .block-title{
+        margin-bottom: 24px;
+        .payment-total-money{
+            @include typo('bold',14px,$gray_black);
+        }
+    }
+    .payment-link-content{
+        margin-top: 24px;
+        .payment-notfound{
+            text-align: center;
+            margin: 5rem 0;
+        }
+    }
+
+    .payment-link-list{
+        .p_link_copy{
+            .btn-copy{
+                display: none;
+            }
+            &:hover{
+                color:$blue;
+                .btn-copy{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+.bg-gradient-green{
+    background: linear-gradient(90deg, #05C37E 49.24%, #BCFFBC 95.55%);
+    border-radius: 8px;
+}
+
+.payment-link-share{
+    margin-bottom: 20px;
+    .payment_code{
+        position: relative;
+        .btn-copy-orange{ position: absolute;
+            right:0px;
+            top: 0px;}
+        .ic-copy-orange{
+           
+            background: url(../images/ic-copy-orange.svg) no-repeat center center/ 24px;
+        }
+    }
+}
+
+.bg-line{
+    background: url(../images/bg_line_gray.png) no-repeat bottom center;
+}
+.payment-link-qrcode{
+    padding-bottom: 8rem;
+}
+
+.frm-ticket-type{
+    background-color: #F6F6F6;   
+    padding: 24px;
+    border-radius: 8px;
+    .form-control{
+        background: #EEF3FE;
+        /* All / Blue 100 */
+        border: 1px solid #D4E2FC;
+        
+        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #8FA3AD;
+            opacity: 1; /* Firefox */
+          }
+          
+        &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #8FA3AD;
+          }
+          
+        &::-ms-input-placeholder { /* Microsoft Edge */
+            color: #8FA3AD;
+          }
+    }
+}
+
+.w-220{
+    width:220px;
+}
+
+.page-subtrack{
+    background: url(../images/bg_stack_line.png) no-repeat bottom center / 100%, linear-gradient(180deg, #4687FF 0%, #CFE0FE 100%);
+    border-radius: 15px;
+    padding: 20px;
+    max-height: 180px;
+    margin-bottom: 95px;
+   .page-top{
+       padding-top: 40px;
+       h2{
+           @include typo('bold',20px,#ffffff);
+           margin-bottom: 0;
+           margin-right: 1rem;
+       }
+   }
+   .page-search-header{
+        background: linear-gradient(112.83deg, rgba(255, 255, 255, 0.82) 0%, rgba(255, 255, 255, 0.8) 110.84%);
+        border: 1.5px solid #FFFFFF;
+        /* Below / Low */
+        
+        box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.05);
+        border-radius: 15px;
+        padding:20px;
+        margin-top: 20px;
+        margin-bottom: 100px;
+        .col{
+            margin-bottom: calc(var(--bs-gutter-x) * .5);
+        }
+   }
+}
+
+.report-stats{
+    margin-bottom: 1rem;
+    .report-stats-title{
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+        .report-stats-text{
+            @include typo('bold',12px,#8FA3AD);
+            margin-left: .5rem;
+        }
+    }
+}
+
+.receiver_info{
+    background: #EEF3FE;
+    /* All / Blue 200 */
+
+    border: 1px solid #A0BFF9;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    .receiver_title{
+        @include typo('bold',14px,$blue);
+    }
+    
+}
+
+.w-600{
+    width:600px;
+}
+
+.bg-gray{
+    background: #F6F6F6;
+}
+
+.br-8{
+    border-radius: 8px;
+}
+
+.ticket-result{
+    margin-top: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px dashed #ccc;
+    padding: 5px;
+    .t-result{
+        margin: 4px;
+        font-size: 12px;
+        font-family: 'SVN-Product Sans Bold';
+        &.b-line{
+            border-radius: 3px;
+            border: 1px solid #e2e2e2;
+            padding: 2px 4px;
+            background: #fff;
+            &.b-red{
+                color:#FA1900;
+                border-color: #FA1900;
+            }
+        }
+    }
+}
+
+
+.h-full{
+    height:100%;
+}
+
+.buyticket-info{
+    margin-top: 1rem;
+    h5{
+        margin-bottom: 10px;
+    }
+    .d-head{
+        font-family: 'SVN-Product Sans Bold';
+        margin-bottom: 3px;
+    }
+    .d-list{
+        background: #f6f6f6;
+        border-radius: 8px;
+        padding:4px;
+        font-size: 12px;
+    }
+    .ticket-draf{
+        input{
+            display: block;
+            width: 0;
+            height: 0;
+            visibility: hidden;
+        }
+    }
+}
+.bg-ball{
+    background: url(../images/img-ball.png) no-repeat top right, linear-gradient(180deg, #4687FF 0%, #CFE0FE 100%);
+}

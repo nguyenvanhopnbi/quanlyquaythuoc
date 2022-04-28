@@ -1,0 +1,204 @@
+.nav-link{
+    &.active,&.show{
+        .icon-ticket{
+            background: url(../images/ic-ticket-w.svg) no-repeat center center / 18px;
+        }
+    }
+}
+.nav-icon{
+    width: 18px;height: 16px;
+    display: inline-flex;
+    margin-right: 14px;
+    max-width: 18px;
+    flex: 100%;
+    &.icon-doisoat{
+        background: url(../images/ic-doisoat.svg) no-repeat center center / 18px;
+        &.active{
+            background: url(../images/ic-doisoat-w.svg) no-repeat center center / 18px;
+        }
+    }
+    &.icon-sodu{
+        background: url(../images/ic-wallet.svg) no-repeat center center / 18px;
+    }
+    &.icon-payment-gateway{
+        background: url(../images/ic-gateways.svg) no-repeat center center / 18px;
+    }
+    &.icon-charging{
+        background: url(../images/ic-charging.svg) no-repeat center center / 18px;
+    }
+    &.icon-payment-ticket{
+        background: url(../images/ic-receipt.svg) no-repeat center center / 18px;
+    }
+    &.icon-topup{
+        background: url(../images/ic-topup.svg) no-repeat center center / 18px;
+    }
+    &.icon-thuho{
+        background: url(../images/ic-thuho.svg) no-repeat center center / 18px;
+    }
+    &.icon-chiho{
+        background: url(../images/ic-chiho.svg) no-repeat center center / 18px;
+    }
+    &.icon-account-info{
+        background: url(../images/ic-account.svg) no-repeat center center / 18px;
+    }
+    &.icon-partners{
+        background: url(../images/ic-account.svg) no-repeat center center / 18px;
+    }
+    &.icon-ticket{
+        background: url(../images/ic-ticket.svg) no-repeat center center / 18px;
+       
+    }
+}
+
+.icon-collapse{
+    display: block;
+    position: absolute;
+    right: -12px;
+    top: 12px;
+    width:24px;height:24px;
+    background: url(../images/ic-collapse.svg) no-repeat center center / 24px;
+    transition: transform .3s linear;
+    &.collapsed{
+        transform: rotate(180deg);
+        transition: transform .3s linear;
+    }
+}
+
+.btn-icon{
+    width: 12px;height:12px;
+    display: inline-flex;
+    margin-right: .5rem;
+    &.ic-cashout{
+        background: url(../images/hand-holding-usd.svg) no-repeat center center;
+    }
+}
+
+.icon-th{
+    background: url(../images/ic-calendar.svg) no-repeat cente center!important;
+}
+
+.ic-page{
+    display: inline-block;
+    width: 12px;height:16px;
+    background: url(../images/ic-page.svg) no-repeat center center / 24px;
+    text-indent: -9999px;
+}
+
+.ic-edit{
+    display: inline-flex;
+    width: 21px;height:21px;
+    background: url(../images/ic-edit.svg) no-repeat center center / 21px;
+}
+
+.ic-download-page{
+    display: inline-flex;
+    width: 20px;height:20px;
+    background: url(../images/ic-download-page.svg) no-repeat center center / 21px;
+}
+
+.ic-chart{
+    display: inline-flex;
+    width:30px;height:30px;
+    background: url(../images/ic-chart.svg) no-repeat center center / 30px;
+}
+
+.ic-info-blue{
+    display: inline-flex;
+    width:30px;height:30px;
+    background: url(../images/ic-info-blue.svg) no-repeat center center / 30px;
+}
+
+.ic-info{
+    display: inline-flex;
+    width:30px;height:30px;
+    background: url(../images/ic-info.svg) no-repeat center center / 30px;
+}
+.ic-partner{
+    display: inline-flex;
+    width:30px;height:30px;
+    background: url(../images/ic-hand-shake.svg) no-repeat center center / 30px;
+}
+.ic-wallet-orange{
+    display: inline-flex;
+    width:30px;height:30px;
+    background: url(../images/ic-wallet-orange.svg) no-repeat center center / 30px;
+}
+.w-52{
+    width:52px;height: 52px;
+    flex: 100%;
+    max-width: 52px;
+}
+.w-32{
+    width:32px;height: 32px;
+    flex: 100%;
+    max-width: 32px;
+}
+.rounder{
+    border-radius: 50%;
+}
+.bg-green{
+    background: #DAF0E3;
+}
+.bg-light-blue{
+    background: #D4E2FC;
+}
+
+.bg-orange{
+    background: #FFF6C8;
+}
+.bg-pink{
+    background: #FADBD7;
+}
+.ic-24{
+    display: inline-flex;
+    width:24px;height:24px;
+}
+
+.ic-checkmark{
+    display: inline-flex;
+    width:14px;height: 15px;
+    margin-right:10px;
+    background: url(../images/ic-checkmark.svg) no-repeat top left / 20px;
+}
+
+.ic-money-gray{
+    display: inline-flex;
+    width:24px;height: 12px;
+    margin-right:10px;
+    background: url(../images/ic-money-gray.svg) no-repeat center center / 24px;
+}
+
+.ic-plus-w{
+    background: url(../images/ic-plus-w.svg) no-repeat center center / 24px;
+}
+.ic-total-money-b{
+    background: url(../images/ic-total-money-b.svg) no-repeat center center / 24px;
+}
+
+.ic-filter{
+    background: url(../images/ic-filter.svg) no-repeat center center / 14px;
+}
+
+.ic-add-green{
+    background: url(../images/ic-add-g.svg) no-repeat center center / 24px;
+}
+
+.ic-arrow-green{
+    background: url(../images/ic-arrow-g.svg) no-repeat center center / 24px;
+    &.up{
+        transform:rotate(180deg);
+    }
+}
+
+.ic-copy{
+    background: url(../images/ic-copy-orange.svg) no-repeat right center / 24px;
+    display: inline-flex;
+    width:24px;height:24px;
+}
+.ic-save-orange{
+    background: url(../images/ic-download-orange.svg) no-repeat right center / 24px;
+}
+
+.ic-add-b{
+    background: url(../images/ic-add-b.svg) no-repeat right center / 24px;
+}

@@ -1,0 +1,155 @@
+.button, a{
+    cursor: pointer;
+}
+.scrollme {
+    overflow-x: auto;
+}
+
+.nav-link{
+    font-weight: bold !important;
+}
+.table-config thead {
+    border-bottom: 1px solid #f0f3ff !important;
+}
+.table-config thead tr {
+    border-bottom: 1px solid #f0f3ff !important;
+}
+
+.table-config tr{
+    border-bottom: 1px solid #f0f3ff;
+}
+.table-config input{
+
+    padding: 7px;
+    color: #595d6e;
+}
+.table-config th{
+
+    color: #595d6e;
+}
+.table-config td{
+
+    color: #595d6e;
+    font-size: 1rem;
+}
+.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: #FFFFFF !important;
+}
+.flaticon2-pen {
+    font-size: 1.15rem;
+    color: #93a2dd;
+    cursor: pointer;
+}
+.flaticon2-delete{
+    font-size: 1.15rem;
+    color: #93a2dd;
+    cursor:  pointer;
+}
+.resendIpnButton{
+    background-color: #FFF;
+    border: none;
+}
+.logs-import-cards ul.list-group{
+    margin-bottom: 40px;
+    margin-top: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.logs-import-cards ul li.notification{
+    font-weight: bold;
+}
+.logs-import-cards ul li{
+    font-size: 14px;
+}
+.logs-import-cards table{
+    background-color: #fff;
+
+}
+a[disabled="disabled"] {
+    pointer-events: none;
+}
+.btn-search{
+    margin-top: 30px;
+}
+
+label.datetimesearch {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+#start-time{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    font-weight: bold;
+}
+#end-time{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+/*select box*/
+label,
+footer {
+    font-family: sans-serif;
+}
+
+label {
+    font-size: 1rem;
+    padding-right: 10px;
+}
+
+select {
+    font-size: .9rem;
+    padding: 2px 5px;
+}
+
+footer {
+    font-size: .8rem;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.output {
+    background: center/cover no-repeat url('/media/cc0-images/hamster.jpg');
+    position: relative;
+}
+
+.select-log{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 18;
+}
+.log-input{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+}
+#log-import-table {
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #fff;
+    border: 1px solid #e2e5ec;
+}
+#dropdownPagination{
+   margin-left: 40px;
+   font-size: 14px;
+   color: #5d78ff;
+   background-color: #fff;
+   border: 1px solid #ebedf2;
+}
+table.transaction-list{
+    font-size: 14px;
+    font-weight: 400;
+    color: #646c9a;
+}

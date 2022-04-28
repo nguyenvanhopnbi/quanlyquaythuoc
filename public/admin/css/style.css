@@ -1,0 +1,19 @@
+.input-search-second {
+    margin-top: 1%;
+}
+.input-search-third {
+    margin-top: 1%;
+}
+.span-value-popup {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.label-popup {
+    float:right;
+}
+
+.kt-badge.kt-badge--brown {
+    color: #fff;
+    background: #74788d;
+}
